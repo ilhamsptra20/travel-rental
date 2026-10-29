@@ -1,5 +1,9 @@
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
+## Site content
+
+Editable page copy is initialized in `src/state/site-content.tsx` and shared through `SiteContentProvider` in the root layout. Client components read it with `useSiteContent()`. Update selected fields with `updateContent()` or replace the full document returned by a CMS with `replaceContent()`.
+
 ## Getting Started
 
 First, run the development server:
